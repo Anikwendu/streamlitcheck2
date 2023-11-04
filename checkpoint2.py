@@ -3,9 +3,9 @@ from PIL import Image
 import pickle
 import sklearn
 import streamlit as st
-my_model = pickle.load(open("C:\\Users\\Amarachi Uzochukwu\\Desktop\\rf_model.sav", "rb"))
+my_model = pickle.load(open("rf_model.sav", "rb"))
 st.title("BANK ACCOUNT PREDICTION APP")
-img = Image.open("C:\\Users\\Amarachi Uzochukwu\\Downloads\\pexels-anna-shvets-4482900.jpg")
+img = Image.open("pexels-anna-shvets-4482900.jpg")
 st.image(img, width=350)
 def user_report():
     country = st.sidebar.slider('country', 0.0, 4.0, 1.0)
